@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css
+">
+</head>
+<body>
+    <div style="background-color: black; height:40.7em">
+        <center>
+            {{#if msg5}}
+            <h1 align="center" style="color: white;"> RECORDS </h1>
+            {{#data3}}
+            <table align="center">
+                <tr>
+                    <td><input type="text" placeholder="first name" value="{{first_name}}" name="first_name" id=""></td>
+                    <td><input type="text" placeholder="last name" value="{{last_name}}" name="last_name" id=""></td>
+                    <td><input type="text" placeholder="phone number" value="{{phone_number}}" name="phone_number" id=""></td>
+                </tr>
+
+                {{/data3}}
+            </table>
+
+            {{/if}}
+            <br>
+            <a href="/" class="btn btn-primary" role="button"> Back </a>
+
+        </center>
+    </div>
+    
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js
+"></script>
+</body>
+</html>

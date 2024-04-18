@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css
+">
+</head>
+
+<body>
+    <div style="background-color: black; height: 40.7em;">
+        <center>
+            <h1 style="color: white;"> FIND DATA </h1><br>
+            <form action="/updatestd">
+                <div class="row" style="width: 30em;">
+                    <div class="row" style="padding: 5px;">
+                        <input type="text" class="form-control" placeholder="phone number" name="phone_number" required>
+                    </div>
+                </div>
+                <br>
+                <input class="btn btn-primary" type="submit" name="" id="" value="Submit">
+                <a href="/" class="btn btn-primary" role="button"> Back </a>
+
+            {{#if msg6}}
+            <h1 style="color: white;"> Data Updated </h1>
+            {{/if}}
+            {{#if umsg}}
+            <h1 style="color: white;"> Data Not Found </h1>
+            {{/if}}
+
+            </form>
+            {{#if msg4}}
+            <h1 align="center" style="color: white;"> Update records </h1>
+
+            <form action="/updaterec">
+            <center>
+                {{#data2}}
+                <input type="text" placeholder="first name" value="{{first_name}}" name="first_name" id="">
+                <input type="text" placeholder="last name" value="{{last_name}}" name="last_name" id="">
+                <input type="text" placeholder="phone number" value="{{phone_number}}" name="phone_number" id="">
+
+                <br>
+                <br>
+                <button>update</button>
+                {{/data2}}
+            </center>
+            </form>
+            {{/if}}
+            
+        </center>
+
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js
+"></script>
+</body>
+
+</html>
